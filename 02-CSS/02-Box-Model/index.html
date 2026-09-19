@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Box Model Practice</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 30px;
+      background-color: #f3f4f6;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 700px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: white;
+      border: 2px solid #ddd;
+    }
+
+    .card {
+      width: 300px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #e5e7eb;
+      border: 2px solid #374151;
+      border-radius: 10px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      margin: 0;
+      padding: 10px;
+      background-color: white;
+    }
+
+    .button {
+      display: block;
+      width: 150px;
+      margin: 20px auto 0;
+      padding: 10px 20px;
+      border: 2px solid #2563eb;
+      border-radius: 8px;
+      background-color: #2563eb;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Box Model</h2>
+
+      <p>
+        This card demonstrates content, padding, border and margin.
+      </p>
+
+      <button class="button">Learn More</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

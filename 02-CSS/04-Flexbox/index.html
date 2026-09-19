@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            display: flex;
+            background-color: rgb(72, 68, 68);
+            
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            padding: 20px;
+            border-radius: 5px;
+            border: 2px solid rgb(196, 20, 20);
+        }
+        .nav-links{
+            display: flex;
+            gap: 16px;
+           
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">MyWebsite</div>
+
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+      </div>
+    </nav>
+  </body>
+</html>
