@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Practice</title>
+</head>
+
+<body>
+
+    <a href="#main-content">Skip to main content</a>
+
+    <header>
+
+        <h1>Junaid Gul - Frontend Developer</h1>
+
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main id="main-content">
+
+        <section id="about" aria-labelledby="about-heading">
+
+            <h2 id="about-heading">About Me</h2>
+
+            <p>
+                I am a Computer Science student focused on frontend
+                development and practical web projects.
+            </p>
+
+            <figure>
+
+                <img
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+                    alt="Laptop displaying HTML and CSS code on a desk"
+                    width="600"
+                >
+
+                <figcaption>
+                    Practicing frontend development through real projects.
+                </figcaption>
+
+            </figure>
+
+        </section>
+
+
+        <section id="projects" aria-labelledby="projects-heading">
+
+            <h2 id="projects-heading">My Projects</h2>
+
+            <article aria-labelledby="blinkit-heading">
+
+                <h3 id="blinkit-heading">Blinkit Clone</h3>
+
+                <p>
+                    A responsive grocery website layout recreated using
+                    HTML and CSS.
+                </p>
+
+                <a
+                    href="#"
+                    aria-label="View Blinkit Clone project"
+                >
+                    View Project
+                </a>
+
+            </article>
+
+
+            <article aria-labelledby="studysync-heading">
+
+                <h3 id="studysync-heading">StudySync Clone</h3>
+
+                <p>
+                    An educational website layout built with responsive
+                    frontend techniques.
+                </p>
+
+                <a
+                    href="#"
+                    aria-label="View StudySync Clone project"
+                >
+                    View Project
+                </a>
+
+            </article>
+
+        </section>
+
+
+        <section id="skills" aria-labelledby="skills-heading">
+
+            <h2 id="skills-heading">Skills</h2>
+
+            <ul aria-label="Frontend development skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>WordPress</li>
+            </ul>
+
+            <p>
+                Current learning progress:
+                <progress
+                    value="70"
+                    max="100"
+                    aria-label="Frontend learning progress"
+                >
+                    70%
+                </progress>
+            </p>
+
+        </section>
+
+
+        <section id="contact" aria-labelledby="contact-heading">
+
+            <h2 id="contact-heading">Contact Me</h2>
+
+            <p id="contact-description">
+                Send a message if you would like to discuss a web project.
+            </p>
+
+            <form
+                aria-describedby="contact-description"
+            >
+
+                <div>
+
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        aria-describedby="email-help"
+                        required
+                    >
+
+                    <small id="email-help">
+                        Enter a valid email address.
+                    </small>
+
+                </div>
+
+
+                <div>
+
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        aria-describedby="message-help"
+                        required
+                    ></textarea>
+
+                    <small id="message-help">
+                        Tell me briefly what you would like to discuss.
+                    </small>
+
+                </div>
+
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+            <p
+                role="status"
+                aria-live="polite"
+            >
+                Your message status will appear here.
+            </p>
+
+        </section>
+
+
+        <section aria-labelledby="faq-heading">
+
+            <h2 id="faq-heading">Frequently Asked Questions</h2>
+
+            <details>
+
+                <summary>
+                    What technologies do you use?
+                </summary>
+
+                <p>
+                    I currently work with HTML, CSS, JavaScript,
+                    and WordPress.
+                </p>
+
+            </details>
+
+
+            <details>
+
+                <summary>
+                    Are you available for frontend projects?
+                </summary>
+
+                <p>
+                    Yes, I am interested in practical frontend
+                    development projects.
+                </p>
+
+            </details>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <nav aria-label="Footer navigation">
+
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <p>
+            <small>
+                &copy; 2026 Junaid Gul. All rights reserved.
+            </small>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

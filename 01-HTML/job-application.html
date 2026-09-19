@@ -1,0 +1,145 @@
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application</title>
+  </head>
+
+  <body>
+    <h1>Apply for Frontend Developer Position</h1>
+
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullName">Full Name</label>
+        <input type="text" name="name" id="fullName" required />
+
+        <br /><br />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+
+        <br /><br />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" required />
+
+        <br /><br />
+
+        <label for="dateOfBirth">Date of Birth</label>
+        <input type="date" name="dateOfBirth" id="dateOfBirth" required />
+
+        <br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Job Information</legend>
+
+        <label for="position">Position</label>
+        <select name="position" id="position">
+          <option value="frontendDeveloper">Frontend Developer</option>
+          <option value="wordpressDeveloper">WordPress Developer</option>
+          <option value="uiDeveloper">UI Developer</option>
+        </select>
+
+        <br /><br />
+
+        <label for="experience">Experience</label>
+        <input
+          type="number"
+          name="experience"
+          id="experience"
+          min="0"
+          max="10"
+        />
+
+        <br /><br />
+
+        <label for="resume">Resume</label>
+        <input
+          type="file"
+          name="resume"
+          id="resume"
+          accept=".pdf,.doc,.docx"
+        />
+
+        <br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Work Preference</legend>
+
+        <label>
+          <input type="radio" name="workPreference" value="remote" />
+          Remote
+        </label>
+
+        <label>
+          <input type="radio" name="workPreference" value="onsite" />
+          On-site
+        </label>
+
+        <label>
+          <input type="radio" name="workPreference" value="hybrid" />
+          Hybrid
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Skills</legend>
+
+        <label>
+          <input type="checkbox" name="skills" value="html" />
+          HTML
+        </label>
+
+        <label>
+          <input type="checkbox" name="skills" value="css" />
+          CSS
+        </label>
+
+        <label>
+          <input type="checkbox" name="skills" value="javascript" />
+          JavaScript
+        </label>
+
+        <label>
+          <input type="checkbox" name="skills" value="wordpress" />
+          WordPress
+        </label>
+      </fieldset>
+
+      <br />
+
+      <label for="coverLetter">Cover Letter</label>
+
+      <br />
+
+      <textarea
+        id="coverLetter"
+        name="coverLetter"
+        placeholder="Tell us why you are interested in this position."
+      ></textarea>
+
+      <br /><br />
+
+      <label>
+        <input
+          type="checkbox"
+          name="agreement"
+          value="confirmed"
+          required
+        />
+        I confirm that the information provided is correct.
+      </label>
+
+      <br /><br />
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </body>
+</html>
+```
