@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-classes Practice</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      /* Navbar */
+
+      .navbar {
+        padding: 20px 40px;
+        background-color: #222;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-links a {
+        padding: 10px 15px;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+      }
+
+      /* Practice :hover here */
+      .nav-links:hover {
+        text-decoration: underline;
+        text-decoration-color: white;
+        text-underline-offset: 5px;
+        background-color: #c56363;
+        padding: 10px;
+        border-radius: 20px;
+      }
+
+      /* Form */
+
+      .form-section {
+        width: 400px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: white;
+        border-radius: 12px;
+      }
+
+      .form-section input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+      }
+
+      .form-section input:focus {
+        border: 2px solid #0066cc;
+        background-color: #f0f7ff;  
+        outline: none;
+      }
+
+      .submit-btn {
+        padding: 12px 20px;
+        border: none;
+        border-radius: 6px;
+        background-color: #222;
+        color: white;
+        cursor: pointer;
+      }
+
+      .submit-btn:active{
+        padding: 8px 16px;
+      }
+
+      /* List */
+
+      .list-section {
+        width: 400px;
+        margin: 50px auto;
+      }
+
+      .items {
+        padding: 0;
+        list-style: none;
+      }
+
+      .items li {
+        padding: 15px;
+        margin-bottom: 5px;
+        background-color: white;
+      }
+
+      
+        .items li:first-child{
+        background-color: #0066cc;
+      }
+
+      .items li:last-child{
+        background-color: beige;
+      }
+
+      .items li:nth-child(3){
+        background-color: aqua;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- Form -->
+
+    <section class="form-section">
+      <h2>Contact Form</h2>
+
+      <input type="text" placeholder="Your name" />
+
+      <input type="email" placeholder="Your email" />
+
+      <button class="submit-btn">Submit</button>
+    </section>
+
+    <!-- List -->
+
+    <section class="list-section">
+      <h2>My Skills</h2>
+
+      <ul class="items">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>WordPress</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+  </body>
+</html>
